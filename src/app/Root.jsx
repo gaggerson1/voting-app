@@ -13,6 +13,11 @@ import 'typeface-lato';
  */
 import Routes from './Routes';
 
+/**
+ * Styles
+ */
+import '../styles/main.scss';
+
 const Root = () => {
   return <Routes />;
 };
