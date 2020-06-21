@@ -14,11 +14,16 @@ import {
  */
 import routes from './config/routes';
 
+/**
+ * Components
+ */
+import Home from '../Home';
+
 const Routes = () => {
   return (
     <Router>
       <Switch>
-        <Route exact path={routes.home} render={() => <div>Home</div>} />
+        <Route exact path={routes.home} component={Home} />
         <Route exact path={routes.signin} render={() => <div>signin</div>} />
         <Route exact path={routes.trials} render={() => <div>trials</div>} />
         <Route
