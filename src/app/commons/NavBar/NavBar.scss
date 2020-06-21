@@ -62,11 +62,6 @@
 
       @at-root #{$b}--opened {
         &.voting-button {
-          position: fixed;
-          top: 31px;
-          right: 10px;
-          bottom: initial;
-
           div {
             &:nth-child(1) {
               transform: rotate(40deg);
