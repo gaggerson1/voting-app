@@ -1,0 +1,54 @@
+/*------------------------------------*\
+  #CLOSING BAR
+\*------------------------------------*/
+.voting-closing-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+
+  @at-root #{&}__message-wrapper {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+    min-width: calc(100% / 3);
+    height: 100%;
+    background-color: rgba($dove-gray, 0.3);
+
+    &::after {
+      content: '\25B6';
+      position: absolute;
+      font-size: 0.937rem;
+      color: rgba($dove-gray, 0.3);
+      right: -12px;
+    }
+  }
+
+  @at-root #{&}__message {
+    color: $white;
+    font-size: 0.812rem;
+  }
+
+  @at-root #{&}__days-wrapper {
+    display: inline-flex;
+    align-items: center;
+    flex: 1;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    height: 100%;
+    background-color: rgba($white, 0.7);
+    font-size: 2.312rem;
+    color: $tundora;
+  }
+
+  @at-root #{&}__number-days {
+    margin-right: 7px;
+  }
+
+  @at-root #{&}__text-days {
+    font-weight: $font-light;
+  }
+}
