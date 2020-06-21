@@ -1,0 +1,70 @@
+/*------------------------------------*\
+  #ALERT
+\*------------------------------------*/
+.voting-alert {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: $gallery;
+  padding: 20px 70px 20px 29px;
+  width: 100%;
+
+  @at-root #{&}__left-info {
+    display: block;
+    color: $mine-shaft;
+    margin-right: 20px;
+  }
+
+  @at-root #{&}__heading {
+    display: block;
+    color: inherit;
+    font-size: 2.125rem;
+    font-weight: $font-bold;
+  }
+
+  @at-root #{&}__subheading {
+    display: block;
+    color: inherit;
+    font-size: 1.25rem;
+    font-weight: $font-light;
+  }
+
+  @at-root #{&}__text {
+    flex: 1;
+    color: $mine-shaft;
+    font-size: 0.937rem;
+    font-weight: $font-light;
+  }
+
+  @at-root #{&}__button {
+    position: absolute;
+    top: 50%;
+    right: 9px;
+    transform: translateY(-50%);
+
+    &.voting-button {
+      svg {
+        fill: $mine-shaft;
+      }
+    }
+  }
+}
+
+/*------------------------------------*\
+  #MEDIA QUERIES
+\*------------------------------------*/
+@media screen and (max-width: 767px) {
+  .voting-alert {
+    flex-direction: column;
+    align-items: flex-start;
+
+    @at-root #{&}__left-info {
+      margin: 0 0 20px 0;
+    }
+
+    @at-root #{&}__button {
+      top: 15px;
+      transform: translateY(0);
+    }
+  }
+}

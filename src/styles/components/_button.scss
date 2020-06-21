@@ -1,0 +1,77 @@
+/*------------------------------------*\
+  #BUTTONS
+\*------------------------------------*/
+.voting-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  padding: 10px;
+  line-height: 18px;
+  font-weight: $font-regular;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    transition: opacity ease-in-out 0.5s;
+    opacity: 0.7;
+  }
+
+  @at-root #{&}--icon-button {
+    background-color: rgba($white, 0);
+
+    svg {
+      fill: $white;
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  @at-root #{&}--bg-jave {
+    background-color: $jave;
+    color: $white;
+
+    svg {
+      fill: $white;
+    }
+  }
+
+  @at-root #{&}--bg-my-sin {
+    background-color: $my-sin;
+    color: $white;
+
+    svg {
+      fill: $white;
+    }
+  }
+
+  @at-root #{&}--bordered {
+    $b: &;
+    border: 2px solid;
+
+    @at-root #{$b}--white {
+      border-color: $white;
+    }
+  }
+
+  @at-root #{&}--outline {
+    $o: &;
+    background-color: rgba($white, 0);
+    border: 2px solid;
+    font-size: 1.125rem;
+
+    @at-root #{$o}--mine-shaft {
+      color: $mine-shaft;
+      border-color: $mine-shaft;
+    }
+
+    @at-root #{$o}--white {
+      color: $white;
+      border-color: $white;
+    }
+  }
+
+  @at-root #{&}--without-events {
+    pointer-events: none;
+  }
+}

@@ -1,0 +1,35 @@
+@import './colors';
+@import './variables';
+@import './reset';
+@import './components';
+@import './helpers';
+
+html {
+  font-size: $font-base;
+}
+
+body {
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+[class^='voting-icon-'],
+[class*=' voting-icon-'] {
+  margin: 10px;
+  height: 32px;
+  width: 32px;
+  float: left;
+  fill: currentColor;
+}
